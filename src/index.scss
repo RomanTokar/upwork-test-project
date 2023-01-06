@@ -1,0 +1,33 @@
+#button-a {
+  background-color: #46139f;
+}
+
+#modal-a .modal-body .list-group {
+  height: 500px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+#modal-a .modal-footer {
+  justify-content: space-between;
+}
+
+#button-b {
+  background-color: #ff7f50;
+}
+
+#modal-b .modal-footer {
+  justify-content: flex-start;
+}
+
+#button-c {
+  border-color: #46139f;
+  background-color: white;
+  color: black;
+}
+
+#close-button {
+  border-color: #46139f;
+  background-color: white;
+  color: #46139f;
+}
