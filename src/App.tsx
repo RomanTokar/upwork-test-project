@@ -73,7 +73,7 @@ const ContactsModal = ({ title, showModal, setShowModal, contactsType }: Contact
     <Modal
       show={showModal}
       onHide={() => setShowModal(false)}
-      id={'modal-a'}
+      id={'contacts-modal'}
       backdrop="static"
       keyboard={false}
       centered

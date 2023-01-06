@@ -65,7 +65,6 @@ export const changeQuery = createAsyncThunk<void, ContactsState['query']>(
 
 export const fetchContacts = createAsyncThunk('contacts/fetchContacts', async (arg, { dispatch, getState }) => {
   const { page, query, contacts, contactsType } = (getState() as RootState).contacts;
-  console.log(contactsType);
   const { data } = await getContacts({ page, query, countryId: contactsType === 'US' ? 226 : undefined });
   if (data.contacts_ids.length === 0) {
     dispatch(setHasMore(false));
